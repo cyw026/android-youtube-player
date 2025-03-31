@@ -43,4 +43,4 @@ ext {
   PUBLISH_DESCRIPTION = 'Extension for the android-youtube-player:core library, that enables Chromecast compatibility.'
 }
 
-apply from: "../scripts/publish-module.gradle"
+//apply from: "../scripts/publish-module.gradle"

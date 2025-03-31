@@ -41,4 +41,4 @@ ext {
   PUBLISH_DESCRIPTION = 'Custom UI to use with android-youtube-player core module.'
 }
 
-apply from: "../scripts/publish-module.gradle"
+//apply from: "../scripts/publish-module.gradle"
