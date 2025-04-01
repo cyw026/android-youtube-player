@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.os.Handler
 import android.os.Looper
 import android.util.AttributeSet
+import android.view.MotionEvent
 import android.view.View
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings
@@ -144,6 +145,10 @@ internal class WebViewYouTubePlayer constructor(
         return result ?: Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565)
       }
     }
+  }
+
+  override fun onTouchEvent(event: MotionEvent?): Boolean {
+    return false
   }
 
   override fun onWindowVisibilityChanged(visibility: Int) {
