@@ -169,6 +169,17 @@ class DefaultPlayerUiController(
     return this
   }
 
+  override fun enableUI(enable: Boolean): PlayerUiController {
+    panel.isClickable = enable
+    if (enable) {
+      fadeControlsContainer.isDisabled = false
+      panel.setOnClickListener { fadeControlsContainer.toggleVisibility() }
+    } else {
+      showUi(false)
+    }
+    return this
+  }
+
   override fun enableLiveVideoUi(enable: Boolean): PlayerUiController {
     youtubePlayerSeekBar.visibility = if (enable) View.INVISIBLE else View.VISIBLE
     liveVideoIndicator.visibility = if (enable) View.VISIBLE else View.GONE

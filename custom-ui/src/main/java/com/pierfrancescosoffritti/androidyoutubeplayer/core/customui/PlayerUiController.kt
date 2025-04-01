@@ -13,6 +13,7 @@ interface PlayerUiController {
   fun showVideoTitle(show: Boolean): PlayerUiController
   fun setVideoTitle(videoTitle: String): PlayerUiController
 
+  fun enableUI(enable: Boolean): PlayerUiController
   fun enableLiveVideoUi(enable: Boolean): PlayerUiController
 
   /**
